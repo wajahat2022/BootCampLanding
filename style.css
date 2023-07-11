@@ -1,0 +1,172 @@
+
+
+  /* Styles for desktop */
+@media all and (min-width: 1024px) {
+    /* Your CSS styles for desktop here */
+    
+
+
+  }
+
+  
+  /* Styles for tablets */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    /* Your CSS styles for tablets here */
+
+  }
+
+
+  /* Styles for mobile */
+@media all and (max-width: 767px) {
+    /* Your CSS styles for mobile here */
+}
+
+
+* { 
+  box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+
+:root { 
+  --primary-color : red; 
+
+}
+
+header { 
+  background-color: black;
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+
+width: 100%;
+color: white;
+}
+.logo { 
+align-self: center;
+}
+.list-items { 
+  list-style: none;
+  display: flex;
+align-items: center;
+}
+
+ul li { 
+margin-right: 1em;
+}
+.contact-nav { 
+
+background-color: var(--primary-color);
+padding: 0.5em;
+border-radius: 3em;
+
+}
+
+.section-1 {
+  background-image: url('./img/header_image.jpg');
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+color: white;
+}
+.learn-more { 
+  font-size: 0.5rem;
+  padding: 1em 2em;
+text-decoration: none;
+color: white;
+background-color: var(--primary-color);
+border-radius: 1em;
+margin-top: 1em;
+}
+
+.section-2 > h2 { 
+  margin-top: 1em;
+  text-align: center;
+
+}
+.section-2 { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.portfolio_grid { 
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 400px));
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 1em;
+
+justify-content: center;
+gap: 2em;
+}
+.portfoio_grid_item {
+  display: flex;
+  justify-content: center;
+align-items: center;
+justify-content: space-between;
+}
+.portfoio_grid_item > img { 
+  margin-right: 1em;
+ 
+}
+
+.section_3 { 
+  height: 150px;
+background-color: lightblue;
+color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.course_description { 
+max-width: 350px;
+}
+
+.section_4 { 
+  display: flex;
+flex-direction: column;
+
+
+}
+.section_4 > h1 {
+text-align: center;
+
+}
+.form { 
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn_submit { 
+min-width: auto;
+max-width: 5em;
+align-self: flex-end;
+outline: none;
+border: none;
+background-color: none;
+background-color: var(--primary-color);
+border-radius: 2em;
+padding: 0.5em;
+}
+
+.nav_top { 
+  position: fixed;
+  background-color: black;
+}
+
+footer { 
+  background-color: black;
+}
