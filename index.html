@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>WDS Bootcamp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Urbanist:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav nav_top">
-            <span class="logo"><img src="img/wds_logo.png" alt=""></span>
-           <ul class="list-items">
-            <li>Curriculum</li>
-            <li>Pricing</li>
-            <li class="contact-nav">Contact</li>
-           </ul>
-        </nav>
+  <header class="full-screen-header">
+    <nav class="nav nav-top">
+      <img class="logo" src="wds_logo.png" alt="Web Dev Simplified Logo">
+      <ul class="nav-list">
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a class="btn" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="title">WDS Bootcamp</h1>
+    <span class="sub-title">From No Stack To Full Stack</span>
+    <a class="btn" href="#">Learn More</a>
+    <img class="scroll-down-icon" src="arrow_down.svg" alt="Scroll Down Icon">
+  </header>
+  <main>
+    <section class="section">
+      <h2 class="section-title">Curriculum</h2>
+      <div class="curriculum-grid">
+        <div class="curriculum-grid-item">
+          <img src="html_icon.svg" alt="HTML 5 Icon">
+          <p>Start with the basics by learning HTML/CSS to build your first website</p>
+        </div>
+        <div class="curriculum-grid-item">
+          <img src="node_js_icon.svg" alt="Node JS Icon">
+          <p>Build interactive web applications with the world’s most popular backend</p>
+        </div>
+        <div class="curriculum-grid-item">
+          <img src="vscode_icon.svg" alt="Visual Studio Code Icon">
+          <p>Use the latest technology for editing and creating amazing web applications</p>
+        </div>
+        <div class="curriculum-grid-item">
+          <img src="database_icon.svg" alt="Database Icon">
+          <p>Manage application data by learning SQL and NoSQL database architecture</p>
+        </div>
+        <div class="curriculum-grid-item">
+          <img src="edit_page_icon.svg" alt="Web Page Edit Icon">
+          <p>Create stunning designs by using modern design tools like Figma and Sketch </p>
+        </div>
+        <div class="curriculum-grid-item">
+          <img src="react_icon.svg" alt="React Icon">
+          <p>Use the most popular frontend framework to create modern PWAs </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-accent">
+    <div class="pricing-cards-container">
+      <div class="pricing-card">
+        <div class="price-header">
+<div class="plan-name">Basic</div>
+<div class="plan-price">10$</div>
+        </div>
+        <div class="plan-features">
+<div class="feature">4 videos per month</div>
+<div class="feature">1 Project Based videos per month</div>
+<div class="feature inactive">Weekly LIve streams</div>
+<div class="feature inactive ">24/7 Email Support</div>
+<div class="feature inactive">24/7 Phone Support</div>
+<div class="feature inactive">1 Project Code Review Per Month</div>
+        </div>
+      </div>
 
-    </header>
-    <div class="main">
-        <div class="section-1">
-            <h1 class="section-1__heading">WDS Bootcamp</h1>
-            <span class="section-1__description">From No Stack To Full Stack</span>
-        <a class="learn-more" href="#">Learn More</a>
+
+      <div class="pricing-card accent">
+        <div class="price-header">
+<div class="plan-name">Preferred</div>
+<div class="plan-price">25$</div>
         </div>
-        <div class="section-2">
-            <h2>Curriculum</h2>
-            <ul class="portfolio_grid">
-                <div class="portfoio_grid_item"><img width="50" height="50" src="img/html_icon.svg" alt=""> <span class="html_span">Start by building HTML/CSS and start building your first project today</span></div>
-                <div class="portfoio_grid_item"><img width="50" height="50" src="img/node_js_icon.svg" alt=""> <span>Build strong backend with the help of same javscript</span></div>
-                <div class="portfoio_grid_item" ><img width="50" height="50" src="img/vscode_icon.svg" alt=""> <span>The famous and first periority code editor for developers </span></div>
-                <div class="portfoio_grid_item" ><img width="50" height="50" src="img/database_icon.svg" alt=""> <span>MySQl is very robust and simplistic database and every dev must know</span></div>
-                <div class="portfoio_grid_item" ><img width="50" height="50" src="img/edit_page_icon.svg" alt=""> <span>Monitor screen which usually is 100vh and take all screen size</span></div>
-                <div class="portfoio_grid_item" ><img width="50" height="50" src="img/react_icon.svg" alt=""> <span>React js is most used framework when it comes to frontend </span></div>
-            
-            </ul>
+        <div class="plan-features">
+<div class="feature">6 videos per month</div>
+<div class="feature">1 Project Based videos per month</div>
+<div class="feature ">Weekly LIve streams</div>
+<div class="feature  ">24/7 Email Support</div>
+<div class="feature inactive">24/7 Phone Support</div>
+<div class="feature inactive">1 Project Code Review Per Month</div>
         </div>
-        <div class="section_3">
-            <h1>Free</h1>
-            <p class="course_description">This course is free for top 100 students so first come and get scenerio will be followed </p>
+      </div>
+
+
+      <div class="pricing-card  ">
+        <div class="price-header">
+<div class="plan-name">Pro</div>
+<div class="plan-price">50$</div>
         </div>
-        <div class="section_4">
-            <h1>Contact</h1>
-            <form class="form" action="">
-                <label for="name">Name</label>
-                <input type="text" class="name">
-                <label for="email">Email</label>
-                <input type="email" class="email">
-                <label for="message">Message</label>
-                <textarea  name="message" id="" cols="30" rows="5" class="message">
-                
-                </textarea>
-                <button class="btn_submit" type="submit">Submit</button>
-            </form>
+        <div class="plan-features">
+<div class="feature">4 videos per month</div>
+<div class="feature">1 Project Based videos per month</div>
+<div class="feature ">Weekly LIve streams</div>
+<div class="feature  ">24/7 Email Support</div>
+<div class="feature ">24/7 Phone Support</div>
+<div class="feature ">1 Project Code Review Per Month</div>
         </div>
-        <footer>
-            <nav class="nav ">
-                <span class="logo"><img src="img/wds_logo.png" alt=""></span>
-               <ul class="list-items">
-                <li>Curriculum</li>
-                <li>Pricing</li>
-                <li class="contact-nav">Contact</li>
-               </ul>
-            </nav>
-    
-        </footer>
+      </div>
     </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Contact</h2>
+      <form class="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <div class="btn-container">
+          <button class="btn btn-square" type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <nav class="nav">
+      <img class="logo" src="wds_logo.png" alt="Web Dev Simplified Logo">
+      <ul class="nav-list">
+        <li><a href="#">Curriculum</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a class="btn" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
